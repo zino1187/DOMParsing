@@ -64,9 +64,7 @@ public class DOMParser {
 		}
 		return className;		
 	}
-	
-	public static void main(String[] args) {
-		new DOMParser();
-	}
-
+	/*
+	 * public static void main(String[] args) { new DOMParser(); }
+	 */
 }
