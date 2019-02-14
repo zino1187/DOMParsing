@@ -15,13 +15,13 @@ import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
-public class RequestDispatcher {
+public class DOMParser {
 	DocumentBuilderFactory factory;
 	DocumentBuilder builder;
 	Document document;
 	URL url;
 	
-	public RequestDispatcher() {
+	public DOMParser() {
 		url=this.getClass().getClassLoader().getResource("config/config.xml");
 		createDom();
 	}
@@ -66,7 +66,7 @@ public class RequestDispatcher {
 	}
 	
 	public static void main(String[] args) {
-		new RequestDispatcher();
+		new DOMParser();
 	}
 
 }
